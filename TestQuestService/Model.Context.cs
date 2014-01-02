@@ -13,10 +13,10 @@ namespace TestQuestService
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ModelContainer : DbContext
+    public partial class ModelContext : DbContext
     {
-        public ModelContainer()
-            : base("name=ModelContainer")
+        public ModelContext()
+            : base("name=ModelContext")
         {
         }
     

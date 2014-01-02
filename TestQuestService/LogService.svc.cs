@@ -1,33 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
-
-namespace TestQuestService
+﻿namespace TestQuestService
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "LogService" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select LogService.svc or LogService.svc.cs at the Solution Explorer and start debugging.
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class LogService : ILogService
     {
-        public string GetData(int value)
+
+        public void AddRecord(ClientMessage msg)
         {
-            return string.Format("You entered: {0}", value);
+            if (msg != null)
+            {
+                using (ModelContext dbContext = new ModelContext())
+                {
+                    dbContext.ClientMessageSet.Add(msg);
+                    dbContext.SaveChanges();
+                }
+            }
         }
 
-        public CompositeType GetDataUsingDataContract(CompositeType composite)
+        public List<ClientMessage> GetMessages(MessageLevel level, DateTime startDate, DateTime endDate)
         {
-            if (composite == null)
+            using (ModelContext dbContext = new ModelContext())
             {
-                throw new ArgumentNullException("composite");
+                return dbContext.ClientMessageSet.Where(msg => msg.Level == level)
+                    .Where(msg => msg.Date.CompareTo(startDate) >= 0)
+                    .Where(msg => msg.Date.CompareTo(endDate) <= 0)
+                    .ToList();
             }
-            if (composite.BoolValue)
-            {
-                composite.StringValue += "Suffix";
-            }
-            return composite;
         }
     }
 }
