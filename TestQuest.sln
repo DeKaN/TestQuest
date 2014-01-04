@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestQuestService", "TestQuestService\TestQuestService.csproj", "{49FF4EC2-6A24-41EA-9189-74847A94A22B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{31A41CDB-5E6F-4F16-8D78-2CB2C3044CEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{49FF4EC2-6A24-41EA-9189-74847A94A22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49FF4EC2-6A24-41EA-9189-74847A94A22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49FF4EC2-6A24-41EA-9189-74847A94A22B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31A41CDB-5E6F-4F16-8D78-2CB2C3044CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31A41CDB-5E6F-4F16-8D78-2CB2C3044CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31A41CDB-5E6F-4F16-8D78-2CB2C3044CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31A41CDB-5E6F-4F16-8D78-2CB2C3044CEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

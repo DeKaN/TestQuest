@@ -11,11 +11,14 @@ namespace TestQuestService
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class ClientMessage
     {
         public int Id { get; set; }
-        public System.DateTime Date { get; set; }
+        [DisplayName("Message date")]
+        public DateTime Date { get; set; }
+        [DisplayName("Message level")]
         public MessageLevel Level { get; set; }
     }
 }
