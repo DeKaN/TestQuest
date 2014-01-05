@@ -75,6 +75,8 @@
     <Compile Include="ClientMessage.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="DefaultDataManager.cs" />
+    <Compile Include="IDataManager.cs" />
     <Compile Include="LogService.svc.cs">
       <DependentUpon>LogService.svc</DependentUpon>
     </Compile>
@@ -99,9 +101,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
     <EntityDeploy Include="Model.edmx">
