@@ -35,14 +35,14 @@
             this.fromDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.toDateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.resultDataGridView = new System.Windows.Forms.DataGridView();
             this.clientMessageBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.getButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.levelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientMessageBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,24 +99,24 @@
             this.toDateTimePicker.Size = new System.Drawing.Size(181, 22);
             this.toDateTimePicker.TabIndex = 5;
             // 
-            // dataGridView1
+            // resultDataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.resultDataGridView.AllowUserToAddRows = false;
+            this.resultDataGridView.AllowUserToDeleteRows = false;
+            this.resultDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.resultDataGridView.AutoGenerateColumns = false;
+            this.resultDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.resultDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn,
             this.levelDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.clientMessageBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(246, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(366, 144);
-            this.dataGridView1.TabIndex = 6;
+            this.resultDataGridView.DataSource = this.clientMessageBindingSource;
+            this.resultDataGridView.Location = new System.Drawing.Point(246, 6);
+            this.resultDataGridView.Name = "resultDataGridView";
+            this.resultDataGridView.Size = new System.Drawing.Size(366, 144);
+            this.resultDataGridView.TabIndex = 6;
             // 
             // clientMessageBindingSource
             // 
@@ -169,7 +169,7 @@
             this.ClientSize = new System.Drawing.Size(624, 162);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.getButton);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.resultDataGridView);
             this.Controls.Add(this.toDateTimePicker);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.fromDateTimePicker);
@@ -181,7 +181,7 @@
             this.MinimumSize = new System.Drawing.Size(640, 200);
             this.Name = "MainForm";
             this.Text = "WCF Client";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resultDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientMessageBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,7 +196,7 @@
         private System.Windows.Forms.DateTimePicker fromDateTimePicker;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker toDateTimePicker;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView resultDataGridView;
         private System.Windows.Forms.BindingSource clientMessageBindingSource;
         private System.Windows.Forms.Button getButton;
         private System.Windows.Forms.Button addButton;

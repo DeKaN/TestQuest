@@ -15,7 +15,7 @@
             levelComboBox.SelectedIndex = 0;
         }
 
-        private void OkButtonClick(object sender, System.EventArgs e)
+        private void OkButtonClick(object sender, EventArgs e)
         {
             AddingMessage = new ClientMessage
                             {

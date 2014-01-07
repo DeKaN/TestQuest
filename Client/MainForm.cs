@@ -33,7 +33,7 @@
                 fromDateTimePicker.Value,
                 toDateTimePicker.Value);
             bindingList = new BindingList<ClientMessage>(messages);
-            dataGridView1.DataSource = bindingList;
+            this.resultDataGridView.DataSource = bindingList;
         }
 
         private void GetButtonClick(object sender, EventArgs e)
